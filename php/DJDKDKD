@@ -1,0 +1,34 @@
+//Création du matricule responsable unique
+        /*$mois = (int)(date("m"));
+        $sec1 = date("s");
+        $sec2 = (int)(date("s"));
+        $code1 = $sec2 + $sec1 + $mois+$sec2;
+        $code2 = $code1 + $sec2 + $mois+$sec1;  
+        $codemat = $code1.''.$code2 ;
+        //Fin de la création du matricule responsable unique*/
+
+        //Déclaration des variables et l'utilisation des variables pour envoie à la classe concernée
+        $matricule=$admin->test_input($_POST['matricule']);
+        $nom=$admin->test_input($_POST['nom']);
+        $postnom=$admin->test_input($_POST['postnom']);
+        $prenom=$admin->test_input($_POST['prenom']);
+        $adresse=$admin->test_input($_POST['adresse']);
+        $telephone=$admin->test_input($_POST['telephone']);
+        $idrole=$admin->test_input($_POST['idrole']);
+        $email=$admin->test_input($_POST['email']);
+        $sexe=$admin->test_input($_POST['sexe']);
+        $login=$admin->test_input($_POST['loginU']); 
+        $pass=$admin->test_input($_POST['passwordU']);
+        $password=password_hash($pass, PASSWORD_DEFAULT);
+        $etat=$admin->test_input($_POST['etat']);
+
+        if($admin->login_email($login,$email)){
+            echo $admin->showMessage('warning', 'Ce login et email existe déjà, veuillez choisir autre!');
+        }else{
+            if($admin->addResponsable($matricule,$idrole,$nom,$postnom,$prenom,$sexe,$login,$password,$email,$adresse,$telephone,$etat)){
+                echo $admin->showMessage('success', 'Création de responsable effectuée avec succès !');
+            }else{
+                echo $admin->showMessage('danger', 'Une erreur recontrée lors de la création ! Veuillez essayez plutard.');
+            }
+        }
+  
