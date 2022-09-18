@@ -11,4 +11,4 @@ Developers using this project should already have:
 - Sweet Alert
 - JQuery
 - MySQL
-- File database: db_jntsoft.sql
+- File database: adtfclaude.sql
