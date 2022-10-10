@@ -16,7 +16,8 @@ The application is structured as follows:
 
 Here is the demo of the management interface of the application on the administrator side.
 
-![preview img](/demo.PNG)
+![demo](https://user-images.githubusercontent.com/111361566/194842099-2fe2d572-7e83-49bc-bbd4-4a111a4388aa.PNG)
+
 
 
 - The operator is considered the head of the branch who ensures the survival of the branch.
@@ -25,7 +26,7 @@ Here is the demo of the management interface of the application on the administr
 
 Here is the demo of the management interface of the application on the agency side.
 
-![preview img](/Capture.PNG)
+![Capture](https://user-images.githubusercontent.com/111361566/194842108-dd81a1a6-d3fb-4f29-adf4-fb4d343498f5.PNG)
 
 
 ## Getting Started
